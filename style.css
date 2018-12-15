@@ -1,0 +1,21 @@
+h1	{
+	font-size: 40px;
+}
+
+body{
+	font-size: 20px;
+}
+
+li:hover {
+	cursor: pointer;
+}
+
+.done {
+	text-decoration: line-through;
+}
+
+.delButton {
+	position: absolute;
+	left: 200px;
+	cursor: no-drop;
+}
