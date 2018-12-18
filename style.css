@@ -1,6 +1,35 @@
-h1	{
-	font-size: 40px;
+* {
+	text-align: center;
 }
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: -3px;
+  line-height: 1;
+  text-shadow: #EDEDED 3px 2px 0;
+  /*position: relative;*/
+}
+h1:after {
+  content:"shopping list";
+  text-align: center;
+  position: relative;
+  left: 8px;
+  top: -42px;
+}
+h1:after {
+  background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
+  background-size: 4px 4px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: -5;
+  display: block;
+  text-shadow: none;
+}
+
 
 body {
 	font-family: 'Dancing Script', cursive;
@@ -12,7 +41,26 @@ body {
 	background-size: cover;
 }
 
+.main {
+	display: block;
+	position: absolute;
+	top: 20px;
+}
+
+li {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+  position: relative;
+  text-align: left;
+}
 li:hover {
+	background-color: #eee;
 	cursor: pointer;
 }
 
@@ -28,7 +76,7 @@ li:hover {
 */
 .delButton {
 	position: absolute;
-	left: 200px;
+	right: 20px;
 	background-color:#f14e4e;
 	border: 0.16em solid rgba(255,255,255,0);
 	border-radius:2em;
@@ -41,6 +89,8 @@ li:hover {
 	text-align:center;
 	transition: all 0.2s;
 }
+
 .delButton:hover {
- 	border-color: rgba(255,255,255,1);
+ 	background-color: #eee !important;
+	cursor: pointer;
 }

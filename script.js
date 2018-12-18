@@ -37,9 +37,10 @@ function lineThrough(item) {
 function createDeleteButton() {
 	for (var i = 0; i < items.length; i++) {
 		var newDeleteButton = document.createElement("button");
-		newDeleteButton.appendChild(document.createTextNode("Delete"));
+		newDeleteButton.appendChild(document.createTextNode("x"));
 		newDeleteButton.classList.add("delButton");
 		items[i].appendChild(newDeleteButton);
+
 	}
 }
 
